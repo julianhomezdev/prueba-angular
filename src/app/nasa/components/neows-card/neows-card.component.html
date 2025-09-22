@@ -1,0 +1,12 @@
+<div class="row">
+    <div *ngFor="let date of dates" class="col-md-4 col-sm-6">
+        <div class="card mb-2 text-center bg-dark">
+
+            <div id="neo-card" class="card-body text-white">
+                <p class="card-text">Nombre: {{date?.name}}</p>
+                <p class="card-text">Peligroso: {{date?.is_potentially_hazardous_asteroid ? 'Si' : 'No'}}</p>
+            </div>
+
+        </div>
+    </div>
+</div>

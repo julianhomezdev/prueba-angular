@@ -1,0 +1,19 @@
+<div class="container mt-3 mb-3">
+    <h3 class="text-center">NEOS</h3>
+    <div class="form-group">
+        <label for="dateInput">Selecciona una fecha:</label>
+        <!-- Incluya un input de tipo date y agregue a este la directiva [(ngModel)]="selectedDate" -->
+
+        <input 
+            type="date"
+            id="dateInput"
+            class="form-control"
+            [(ngModel)]="selectedDate"    
+            
+        >
+        
+       
+        <!-- Quite los comentarios del botón que encuentra a continuación para usar su funcionalidad-->
+        <button class="btn btn-primary" (click)="printDate()">Buscar</button>
+    </div>
+</div>

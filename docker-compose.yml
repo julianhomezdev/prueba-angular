@@ -1,0 +1,13 @@
+services:
+  angular-nasa-app:
+    build:
+      context: .
+      args:
+        NASA_API_KEY: ${NASA_API_KEY}
+        NASA_APOD_ENDPOINT: ${NASA_APOD_ENDPOINT}
+        NASA_NEOWS_ENDPOINT: ${NASA_NEOWS_ENDPOINT}
+    ports:
+      - "4200:80"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
