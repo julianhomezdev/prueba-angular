@@ -8,6 +8,8 @@ services:
         NASA_NEOWS_ENDPOINT: ${NASA_NEOWS_ENDPOINT}
     ports:
       - "4200:80"
+    env_file:
+      - .env
     environment:
       - NODE_ENV=production
     restart: unless-stopped
